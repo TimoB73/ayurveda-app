@@ -34,8 +34,17 @@ veröffentlicht sie unter **https://timob73.github.io/ayurveda-app/**.
 
 Einmalige Einrichtung im Repository: **Settings → Pages → Build and deployment → Source: „GitHub Actions“**.
 
-Auf dem Handy die Adresse öffnen und über das Browser-Menü **„Zum Startbildschirm hinzufügen“** wählen
-(iPhone: Teilen-Symbol → „Zum Home-Bildschirm“). Die App erscheint dann mit eigenem Symbol wie eine normale App.
+### Als App installieren
+
+Die App ist eine installierbare Web-App (PWA) mit Service Worker: Sie erscheint nach der Installation in der
+App-Übersicht, startet ohne Browserleiste und funktioniert auch offline. Neue Versionen werden beim nächsten Start
+automatisch geladen.
+
+- **Android (Chrome, Samsung Internet):** Adresse öffnen und auf **„Als App installieren“** tippen (Hinweis auf
+  der Startseite) oder im Browser-Menü **„App installieren“** wählen.
+- **iPhone/iPad (Safari):** Teilen-Symbol → **„Zum Home-Bildschirm“**.
+
+Konfiguriert wird das über `vite-plugin-pwa` in `vite.config.ts` (Manifest, Symbole, Offline-Cache).
 
 ## Projektstruktur
 
