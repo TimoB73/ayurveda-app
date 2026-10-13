@@ -1,0 +1,340 @@
+{
+  "version": 1,
+  "categories": [
+    { "id": "koerperbau", "title": "Körperbau & Gewicht" },
+    { "id": "haut", "title": "Haut" },
+    { "id": "haare-naegel", "title": "Haare & Nägel" },
+    { "id": "verdauung", "title": "Appetit & Verdauung" },
+    { "id": "schlaf", "title": "Schlaf & Träume" },
+    { "id": "temperatur", "title": "Temperaturempfinden & Klimavorlieben" },
+    { "id": "energie", "title": "Energie & Bewegung" },
+    { "id": "denken", "title": "Sprache & Denkstil" },
+    { "id": "gedaechtnis", "title": "Gedächtnis" },
+    { "id": "emotionen", "title": "Emotionen & Stressreaktion" }
+  ],
+  "questions": [
+    {
+      "id": "koerperbau",
+      "category": "koerperbau",
+      "prompt": "Mein Körperbau ist …",
+      "modes": ["prakriti"],
+      "options": {
+        "vata": "schlank und zierlich; Gelenke und Knochen sind deutlich sichtbar",
+        "pitta": "mittelgroß, ebenmäßig proportioniert, mäßig muskulös",
+        "kapha": "kräftig und breit gebaut, mit stabilem Knochenbau"
+      }
+    },
+    {
+      "id": "gewicht",
+      "category": "koerperbau",
+      "prompt": "Mein Gewicht …",
+      "options": {
+        "vata": "nehme ich schwer zu; es schwankt leicht",
+        "pitta": "halte ich recht gut; ich nehme gleichmäßig zu und ab",
+        "kapha": "nehme ich leicht zu und schwer wieder ab"
+      }
+    },
+    {
+      "id": "gelenke",
+      "category": "koerperbau",
+      "prompt": "Meine Gelenke …",
+      "options": {
+        "vata": "knacken oft und fühlen sich bei Kälte eher steif an",
+        "pitta": "sind beweglich und mittelgroß",
+        "kapha": "sind groß, gut gepolstert und stabil"
+      }
+    },
+    {
+      "id": "augen",
+      "category": "koerperbau",
+      "prompt": "Meine Augen sind …",
+      "modes": ["prakriti"],
+      "options": {
+        "vata": "eher klein und lebhaft; mein Blick wandert viel",
+        "pitta": "mittelgroß mit durchdringendem Blick; ich bin lichtempfindlich",
+        "kapha": "groß und ruhig, mit dichten Wimpern"
+      }
+    },
+    {
+      "id": "haut-beschaffenheit",
+      "category": "haut",
+      "prompt": "Meine Haut ist …",
+      "options": {
+        "vata": "eher trocken, rau und dünn",
+        "pitta": "warm und empfindlich; sie rötet sich leicht",
+        "kapha": "dick, weich und glatt, eher feucht oder ölig"
+      }
+    },
+    {
+      "id": "haut-sonne",
+      "category": "haut",
+      "prompt": "In der Sonne …",
+      "options": {
+        "vata": "bräune ich schnell, und meine Haut trocknet aus",
+        "pitta": "bekomme ich leicht Sonnenbrand oder Rötungen",
+        "kapha": "bräune ich langsam und gleichmäßig"
+      }
+    },
+    {
+      "id": "schwitzen",
+      "category": "haut",
+      "prompt": "Ich schwitze …",
+      "options": {
+        "vata": "wenig, auch bei Anstrengung",
+        "pitta": "schnell und viel",
+        "kapha": "mäßig und eher spät"
+      }
+    },
+    {
+      "id": "kopfhaar",
+      "category": "haare-naegel",
+      "prompt": "Mein Kopfhaar ist …",
+      "options": {
+        "vata": "trocken und dünn; es neigt zu Spliss oder Krause",
+        "pitta": "fein und weich; es wird früh grau oder lichter",
+        "kapha": "dicht, kräftig und glänzend"
+      }
+    },
+    {
+      "id": "naegel",
+      "category": "haare-naegel",
+      "prompt": "Meine Nägel sind …",
+      "options": {
+        "vata": "dünn, brüchig oder rillig",
+        "pitta": "weich, biegsam und rosig",
+        "kapha": "dick, fest, glatt und glänzend"
+      }
+    },
+    {
+      "id": "koerperbehaarung",
+      "category": "haare-naegel",
+      "prompt": "Meine Körperbehaarung ist …",
+      "modes": ["prakriti"],
+      "options": {
+        "vata": "spärlich und eher rau",
+        "pitta": "fein und weich",
+        "kapha": "dicht und kräftig"
+      }
+    },
+    {
+      "id": "appetit",
+      "category": "verdauung",
+      "prompt": "Mein Appetit ist …",
+      "options": {
+        "vata": "unregelmäßig – mal groß, mal gering",
+        "pitta": "stark; ich werde gereizt, wenn eine Mahlzeit ausfällt",
+        "kapha": "gleichmäßig und mäßig; ich kann Mahlzeiten gut auslassen"
+      }
+    },
+    {
+      "id": "nach-dem-essen",
+      "category": "verdauung",
+      "prompt": "Nach dem Essen …",
+      "options": {
+        "vata": "habe ich öfter Blähungen oder ein unruhiges Bauchgefühl",
+        "pitta": "verdaue ich schnell, gelegentlich mit Sodbrennen",
+        "kapha": "fühle ich mich schwer und müde"
+      }
+    },
+    {
+      "id": "stuhlgang",
+      "category": "verdauung",
+      "prompt": "Mein Stuhlgang ist …",
+      "options": {
+        "vata": "eher hart und trocken; ich neige zu Verstopfung",
+        "pitta": "häufig und weich",
+        "kapha": "regelmäßig und geformt, eher träge"
+      }
+    },
+    {
+      "id": "durst",
+      "category": "verdauung",
+      "prompt": "Mein Durst ist …",
+      "options": {
+        "vata": "wechselnd; ich vergesse oft zu trinken",
+        "pitta": "häufig und stark",
+        "kapha": "gering"
+      }
+    },
+    {
+      "id": "schlafqualitaet",
+      "category": "schlaf",
+      "prompt": "Mein Schlaf ist …",
+      "options": {
+        "vata": "leicht und oft unterbrochen; ich schlafe schwer ein",
+        "pitta": "eher kurz, aber tief und erholsam",
+        "kapha": "tief und lang; ich wache schwer auf"
+      }
+    },
+    {
+      "id": "aufwachen",
+      "category": "schlaf",
+      "prompt": "Morgens nach dem Aufwachen …",
+      "options": {
+        "vata": "bin ich schnell wach, aber innerlich unruhig",
+        "pitta": "bin ich klar und rasch einsatzbereit",
+        "kapha": "brauche ich lange, um in Gang zu kommen"
+      }
+    },
+    {
+      "id": "traeume",
+      "category": "schlaf",
+      "prompt": "Meine Träume sind …",
+      "options": {
+        "vata": "lebhaft und unruhig (z. B. Fliegen, Fallen, Verfolgung)",
+        "pitta": "intensiv und farbig, oft mit Konflikten",
+        "kapha": "ruhig; ich erinnere mich selten an sie"
+      }
+    },
+    {
+      "id": "temperaturempfinden",
+      "category": "temperatur",
+      "prompt": "Mein Temperaturempfinden: …",
+      "options": {
+        "vata": "Ich friere leicht und habe oft kalte Hände und Füße.",
+        "pitta": "Mir wird schnell warm.",
+        "kapha": "Ich empfinde eher kühl, komme damit aber gut zurecht."
+      }
+    },
+    {
+      "id": "lieblingsklima",
+      "category": "temperatur",
+      "prompt": "Am wohlsten fühle ich mich bei …",
+      "options": {
+        "vata": "warmem, feuchtem Wetter",
+        "pitta": "kühlem, gut belüftetem Wetter",
+        "kapha": "warmem, trockenem Wetter"
+      }
+    },
+    {
+      "id": "belastendes-wetter",
+      "category": "temperatur",
+      "prompt": "Am meisten belastet mich …",
+      "options": {
+        "vata": "Wind, Kälte und Trockenheit",
+        "pitta": "Hitze und pralle Sonne",
+        "kapha": "nasskaltes, feuchtes Wetter"
+      }
+    },
+    {
+      "id": "energie-tag",
+      "category": "energie",
+      "prompt": "Meine Energie über den Tag …",
+      "options": {
+        "vata": "kommt in Schüben; ich bin schnell erschöpft",
+        "pitta": "ist zielgerichtet und gut einteilbar",
+        "kapha": "ist gleichmäßig mit großer Ausdauer, aber ich starte langsam"
+      }
+    },
+    {
+      "id": "gang",
+      "category": "energie",
+      "prompt": "Mein Gang und meine Bewegungen sind …",
+      "options": {
+        "vata": "schnell, leicht und unregelmäßig",
+        "pitta": "zielstrebig und bestimmt",
+        "kapha": "langsam, ruhig und gleichmäßig"
+      }
+    },
+    {
+      "id": "sport",
+      "category": "energie",
+      "prompt": "Beim Sport …",
+      "options": {
+        "vata": "mag ich Abwechslung und ermüde rasch",
+        "pitta": "mag ich Wettkampf und überhitze leicht",
+        "kapha": "brauche ich einen Anstoß, bin dann aber ausdauernd"
+      }
+    },
+    {
+      "id": "sprechweise",
+      "category": "denken",
+      "prompt": "Ich spreche …",
+      "options": {
+        "vata": "schnell und viel und springe zwischen Themen",
+        "pitta": "präzise, klar und überzeugend",
+        "kapha": "ruhig und bedächtig, mit angenehmer Stimme"
+      }
+    },
+    {
+      "id": "denken-lernen",
+      "category": "denken",
+      "prompt": "Mein Denken ist …",
+      "options": {
+        "vata": "schnell; ich habe viele Ideen gleichzeitig",
+        "pitta": "analytisch, fokussiert und strukturiert",
+        "kapha": "gründlich und methodisch, eher langsam"
+      }
+    },
+    {
+      "id": "entscheidungen",
+      "category": "denken",
+      "prompt": "Entscheidungen …",
+      "options": {
+        "vata": "ändere ich oft; ich zögere",
+        "pitta": "treffe ich schnell und bestimmt",
+        "kapha": "brauchen bei mir Zeit; dann bleibe ich dabei"
+      }
+    },
+    {
+      "id": "lernen-behalten",
+      "category": "gedaechtnis",
+      "prompt": "Beim Lernen …",
+      "options": {
+        "vata": "nehme ich schnell auf und vergesse schnell",
+        "pitta": "lerne ich zügig und erinnere mich klar und detailliert",
+        "kapha": "lerne ich langsam, behalte aber sehr lange"
+      }
+    },
+    {
+      "id": "gedaechtnis-alltag",
+      "category": "gedaechtnis",
+      "prompt": "Im Alltag …",
+      "options": {
+        "vata": "verlege ich Dinge und vergesse Termine",
+        "pitta": "erinnere ich mich zuverlässig und plane gern",
+        "kapha": "erinnere ich mich langsam, aber sicher"
+      }
+    },
+    {
+      "id": "stress",
+      "category": "emotionen",
+      "prompt": "Unter Stress werde ich …",
+      "options": {
+        "vata": "ängstlich, besorgt und nervös",
+        "pitta": "gereizt, ungeduldig und kritisch",
+        "kapha": "zurückgezogen und träge"
+      }
+    },
+    {
+      "id": "grundstimmung",
+      "category": "emotionen",
+      "prompt": "Meine Grundstimmung ist …",
+      "options": {
+        "vata": "begeisterungsfähig und wechselhaft",
+        "pitta": "ehrgeizig und entschlossen",
+        "kapha": "ruhig, geduldig und gelassen"
+      }
+    },
+    {
+      "id": "konflikte",
+      "category": "emotionen",
+      "prompt": "Bei Konflikten …",
+      "options": {
+        "vata": "weiche ich aus und bin verunsichert",
+        "pitta": "spreche ich die Dinge direkt an",
+        "kapha": "suche ich Harmonie und gebe eher nach"
+      }
+    },
+    {
+      "id": "veraenderungen",
+      "category": "emotionen",
+      "prompt": "Veränderungen …",
+      "options": {
+        "vata": "liebe ich; Routine langweilt mich schnell",
+        "pitta": "begrüße ich, wenn sie einem Ziel dienen",
+        "kapha": "mag ich wenig; ich bevorzuge Routine und brauche Zeit"
+      }
+    }
+  ]
+}
