@@ -7,6 +7,7 @@ import type { ScoringConfig } from "../schema/scoring.schema";
 import { Disclaimer } from "./Disclaimer";
 import { Glossary } from "./Glossary";
 import { formatDate } from "./format";
+import { useInstallPrompt } from "./useInstallPrompt";
 
 const BORDER = { vata: "border-vata", pitta: "border-pitta", kapha: "border-kapha" } as const;
 
@@ -21,8 +22,17 @@ interface Props {
 }
 
 export function Home({ catalog, drafts, results, scoring, onStart, onOpenResult, onOpenHistory }: Props) {
+  const { canInstall, install } = useInstallPrompt();
   return (
     <div className="space-y-6">
+      {canInstall && (
+        <div className="card flex flex-wrap items-center justify-between gap-3 border-amber-300 bg-amber-50">
+          <p>Installieren Sie den Test als App – mit eigenem Symbol und auch offline nutzbar.</p>
+          <button className="btn-primary" onClick={install}>
+            Als App installieren
+          </button>
+        </div>
+      )}
       <section aria-labelledby="intro-title" className="space-y-3">
         <h1 id="intro-title" className="text-2xl font-bold sm:text-3xl">
           Welche ayurvedische Konstitution haben Sie?
