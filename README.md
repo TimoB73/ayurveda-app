@@ -27,6 +27,16 @@ npm run preview    # Produktions-Build lokal ansehen
 
 Der Inhalt von `dist/` ist eine statische Website und kann auf jedem Webserver (oder lokal) betrieben werden.
 
+## Online-Version (GitHub Pages)
+
+Bei jeder Änderung auf `main` testet und baut `.github/workflows/deploy.yml` die App automatisch und
+veröffentlicht sie unter **https://timob73.github.io/ayurveda-app/**.
+
+Einmalige Einrichtung im Repository: **Settings → Pages → Build and deployment → Source: „GitHub Actions“**.
+
+Auf dem Handy die Adresse öffnen und über das Browser-Menü **„Zum Startbildschirm hinzufügen“** wählen
+(iPhone: Teilen-Symbol → „Zum Home-Bildschirm“). Die App erscheint dann mit eigenem Symbol wie eine normale App.
+
 ## Projektstruktur
 
 ```
